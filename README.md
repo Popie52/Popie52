@@ -1,9 +1,8 @@
-# 🙏 Namaste, I'm Popie52
+# 👋 Hi, I’m Popie52
 
 > _"Code is like humor. When you have to explain it, it’s bad." – Cory House_
 
-Fullstack dev from India 🇮🇳 — powered by chai, jugaad, and late-night debugging marathons.  
-I break stuff (intentionally), then fix it like a pro. Currently levelling up in fullstack chaos: React to REST APIs, frontend finesse to backend bhaji.
+I’m a fullstack developer with a passion for building robust, scalable, and user-focused applications. From intuitive frontends to efficient backends, I enjoy transforming ideas into well-engineered solutions.
 
 ---
 
@@ -19,11 +18,9 @@ I break stuff (intentionally), then fix it like a pro. Currently levelling up in
   <img src="https://skillicons.dev/icons?i=playwright,vitest" />
 </p>
 
-> _"If it compiles, it’s karma. If it breaks, it’s probably a semicolon."_ 🙃
-
 ---
 
-## 📈 GitHub Stats
+## 📈 GitHub Activity
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Popie52&show_icons=true&theme=radical&hide_border=true" width="48%" />
@@ -36,22 +33,30 @@ I break stuff (intentionally), then fix it like a pro. Currently levelling up in
 
 ---
 
-<!--## 🚀 Projects in the Works
+<!--## 🚀 Projects
 
-- 🧠 **[Project A](#)** – Brainchild of too much chai and not enough sleep  
-- ⚙️ **[Project B](#)** – One man’s bug is another man’s feature
+- **[Project A](#)** – Description of what it does, what tech is used, and its purpose.
+- **[Project B](#)** – Description with a focus on problems solved or innovative approaches.
 
-_Still polishing them like a Diwali house cleanup._
+> More projects and case studies coming soon.
 
 ---
 -->
+## 📚 Currently Exploring
 
-## 🫱🏻‍🫲 Let’s Collaborate
-
-Open to collabs, memes, hackathons, or just ranting about JavaScript async madness.
-
-📫 [Portfolio](#) • [LinkedIn](#) • [Email](mailto:your-email@example.com)
+- Advanced React & TypeScript patterns  
+- CI/CD automation and testing workflows  
+- Scalable backend architecture (microservices, queues)  
+- DevOps tools and cloud deployment strategies
 
 ---
 
-> _"The only bug I haven’t fixed is the one in my chai."_ ☕🐞
+## 🌐 Let’s Connect
+
+I’m always open to collaboration, remote opportunities, and meaningful conversations in tech.
+
+📫 **[Portfolio](#)** • **[LinkedIn](#)** • **[Email](mailto:your-email@example.com)**
+
+---
+
+> _"Clean code, clear purpose, continuous learning."_  
