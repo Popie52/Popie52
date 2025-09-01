@@ -36,7 +36,7 @@ I break stuff (intentionally), then fix it like a pro. Currently levelling up in
 
 ---
 
-## 🚀 Projects in the Works
+<!--## 🚀 Projects in the Works
 
 - 🧠 **[Project A](#)** – Brainchild of too much chai and not enough sleep  
 - ⚙️ **[Project B](#)** – One man’s bug is another man’s feature
@@ -44,6 +44,7 @@ I break stuff (intentionally), then fix it like a pro. Currently levelling up in
 _Still polishing them like a Diwali house cleanup._
 
 ---
+-->
 
 ## 🫱🏻‍🫲 Let’s Collaborate
 
