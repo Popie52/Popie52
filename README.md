@@ -1,112 +1,56 @@
-# 👋 Hey there, I'm Popie52! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px">
+# 🙏 Namaste, I'm Popie52
 
 > _"Code is like humor. When you have to explain it, it’s bad." – Cory House_
 
-Welcome to my GitHub profile! I'm Popie52 — a fullstack developer, bug whisperer, and caffeine-powered code alchemist.
+Fullstack dev from India 🇮🇳 — powered by chai, jugaad, and late-night debugging marathons.  
+I break stuff (intentionally), then fix it like a pro. Currently levelling up in fullstack chaos: React to REST APIs, frontend finesse to backend bhaji.
 
 ---
 
-## 🚀 About Me
+## 🧰 Tech Stack
 
-I'm a curious student on a mission to master fullstack development, one keystroke (and coffee) at a time. Whether it's building sleek frontends, architecting solid backends, or wrestling rogue bugs at 3AM, I'm always experimenting and learning.
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,nodejs,python,java,cpp" />
+  <br/>
+  <img src="https://skillicons.dev/icons?i=postgres,mongodb,firebase" />
+  <br/>
+  <img src="https://skillicons.dev/icons?i=git,linux,vscode,figma" />
+  <br/>
+  <img src="https://skillicons.dev/icons?i=playwright,vitest" />
+</p>
 
-💻 I love turning wild ideas into real, working products.  
-🧠 I break stuff... but I also fix it better.  
-⚙️ If it runs code, I'm probably already tinkering with it.
-
----
-
-## 🧑‍💻 Tech Arsenal
-
-### 🗣️ Languages
-- JavaScript (React)
-- Python
-- Java
-- C++
-
-### 🗄️ Databases
-- PostgreSQL
-- MongoDB
-
-### 🧪 Testing Tools
-- Playwright (Node)
-- Vitest
-- End-to-End (E2E)
-
-> _If it compiles, I’ll hack it. If it breaks, I’ll fix it. If it works, I’ll improve it._
-
----
-
-<!-- ## 🛠️ Currently Building
-
-Check back soon for some of my favorite and weirdest side-projects:
-
-- 🎯 **[Project A](#)** — _[Short description]_  
-- 🌐 **[Project B](#)** — _[Short description]_  
-- 📱 **[Project C](#)** — _[Short description]_  
--->
-
----
-## 🤓 Always Learning
-
-I'm always expanding my skillset, currently diving deeper into:
-
-- Advanced React patterns & performance
-- CI/CD workflows
-- Microservices & scalable architecture
-- DevOps & cloud tools
+> _"If it compiles, it’s karma. If it breaks, it’s probably a semicolon."_ 🙃
 
 ---
 
 ## 📈 GitHub Stats
 
-![Popie52's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Popie52&show_icons=true&theme=radical&hide_border=true)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Popie52&show_icons=true&theme=radical&hide_border=true" width="48%" />
+  <img src="https://streak-stats.demolab.com?user=Popie52&theme=radical&hide_border=true" width="48%" />
+</p>
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Popie52&layout=compact&theme=radical&hide_border=true)
-
----
-
-## 🔥 Contribution Streak
-
-![GitHub Streak](https://streak-stats.demolab.com/?user=Popie52&theme=dark&hide_border=true)
-
----
-
-## 📊 GitHub Activity Graph
-
-![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Popie52&theme=react-dark&hide_border=true)
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Popie52&theme=react-dark&hide_border=true" />
+</p>
 
 ---
 
-## 🧰 Tools I Use
+## 🚀 Projects in the Works
 
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-43853D?logo=node.js&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?logo=mongodb&logoColor=white)
-![Playwright](https://img.shields.io/badge/Playwright-2EAD33?logo=playwright&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
-![VS Code](https://img.shields.io/badge/VSCode-007ACC?logo=visual-studio-code&logoColor=white)
+- 🧠 **[Project A](#)** – Brainchild of too much chai and not enough sleep  
+- ⚙️ **[Project B](#)** – One man’s bug is another man’s feature
+
+_Still polishing them like a Diwali house cleanup._
 
 ---
 
-## 🌐 Let’s Connect!
+## 🫱🏻‍🫲 Let’s Collaborate
 
-💬 I'm always open to collaboration, feedback, or just nerding out over cool code.
+Open to collabs, memes, hackathons, or just ranting about JavaScript async madness.
 
-📫 **Coming soon:**  
-[Portfolio Website](#) | [LinkedIn](#) | [Twitter / X](#) | [Email](mailto:your-email@example.com)
-
----
-
-## ⚡ Fun Fact
-
-I debug in more languages than I speak IRL.  
-If you hear frantic keyboard clacking, it’s probably me running an E2E test or taming a rogue bug.
+📫 [Portfolio](#) • [LinkedIn](#) • [Email](mailto:your-email@example.com)
 
 ---
 
-> _"The only bug I haven’t squashed yet is the one in my coffee."_ ☕🐞
+> _"The only bug I haven’t fixed is the one in my chai."_ ☕🐞
