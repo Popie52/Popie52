@@ -8,9 +8,7 @@ I’m a fullstack developer with a passion for building robust, scalable, and us
 
 ## 🧰 Tech Stack
 
-<p align="center">
-  <img src="animated-techstack.gif" width="800" />
-</p>
+<p align="center"> <img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,nodejs,python,java,cpp" /> <br/> <img src="https://skillicons.dev/icons?i=postgres,mongodb,firebase" /> <br/> <img src="https://skillicons.dev/icons?i=git,linux,vscode,figma" /> <br/> <img src="https://skillicons.dev/icons?i=playwright,vitest" /> </p>
 
 ---
 
