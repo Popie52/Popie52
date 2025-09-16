@@ -9,7 +9,7 @@ I’m a fullstack developer with a passion for building robust, scalable, and us
 ## 🧰 Tech Stack
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Popie52/Popie52/main/animated-techstack.svg" width="800" />
+  <img src="animated-techstack.gif" width="800" />
 </p>
 
 ---
