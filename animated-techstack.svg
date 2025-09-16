@@ -1,138 +1,261 @@
-<svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Gradient backgrounds -->
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#667eea;stop-opacity:0.1" />
-      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:0.1" />
+    <!-- Modern gradient backgrounds -->
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f1f5f9;stop-opacity:1" />
     </linearGradient>
     
-    <!-- Glow effect -->
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Modern shadow effects -->
+    <filter id="modernShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+    
+    <filter id="iconGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
       <feMerge> 
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
     
-    <!-- Drop shadow -->
-    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
-      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.2"/>
+    <!-- Hover effect -->
+    <filter id="hoverGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
   </defs>
   
-  <!-- Background -->
-  <rect width="800" height="200" fill="url(#bgGradient)" rx="20"/>
+  <!-- Background with subtle pattern -->
+  <rect width="800" height="500" fill="#ffffff"/>
   
-  <!-- Animated background particles -->
-  <circle r="2" fill="#667eea" opacity="0.3">
-    <animate attributeName="cx" values="0;800;0" dur="20s" repeatCount="indefinite"/>
-    <animate attributeName="cy" values="50;150;50" dur="15s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.1;0.5;0.1" dur="8s" repeatCount="indefinite"/>
+  <!-- Decorative elements -->
+  <circle cx="50" cy="50" r="100" fill="url(#accentGradient)" opacity="0.03">
+    <animate attributeName="r" values="80;120;80" dur="8s" repeatCount="indefinite"/>
   </circle>
-  <circle r="1.5" fill="#764ba2" opacity="0.4">
-    <animate attributeName="cx" values="800;0;800" dur="25s" repeatCount="indefinite"/>
-    <animate attributeName="cy" values="180;30;180" dur="18s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.2;0.6;0.2" dur="12s" repeatCount="indefinite"/>
+  <circle cx="750" cy="450" r="80" fill="url(#accentGradient)" opacity="0.05">
+    <animate attributeName="r" values="60;100;60" dur="12s" repeatCount="indefinite"/>
   </circle>
   
-  <!-- Tech icons with enhanced animations -->
+  <!-- Main container -->
+  <rect x="40" y="40" width="720" height="420" rx="16" fill="url(#cardGradient)" filter="url(#modernShadow)" stroke="#e2e8f0" stroke-width="1"/>
   
-  <!-- JavaScript -->
-  <g transform="translate(60, 60)">
-    <circle r="45" fill="#f7df1e" opacity="0.2" filter="url(#glow)">
-      <animate attributeName="r" values="40;50;40" dur="4s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="6s" begin="0s" repeatCount="indefinite"/>
-    </circle>
-    <image xlink:href="https://skillicons.dev/icons?i=js" x="-40" y="-40" width="80" height="80" filter="url(#shadow)">
-      <animateTransform attributeName="transform" type="scale" values="0.8;1.1;0.8" dur="6s" begin="0s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="6s" begin="0s" repeatCount="indefinite"/>
-    </image>
-    <text x="0" y="65" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="12" font-weight="bold">JavaScript</text>
+  <!-- Header -->
+  <text x="400" y="80" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="600" fill="#1e293b">Tech Stack</text>
+  <rect x="320" y="90" width="160" height="2" fill="url(#accentGradient)" rx="1">
+    <animate attributeName="width" values="0;160;0" dur="3s" begin="0s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Languages Row -->
+  <text x="80" y="130" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#475569">Languages</text>
+  
+  <g class="languages-row">
+    <!-- JavaScript -->
+    <g transform="translate(80, 150)">
+      <circle r="28" fill="#f7df1e" opacity="0.1">
+        <animate attributeName="opacity" values="0.05;0.2;0.05" dur="4s" begin="0s" repeatCount="indefinite"/>
+      </circle>
+      <image xlink:href="https://skillicons.dev/icons?i=js" x="-20" y="-20" width="40" height="40" filter="url(#iconGlow)">
+        <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="6s" begin="0s" repeatCount="indefinite"/>
+      </image>
+    </g>
+    
+    <!-- TypeScript -->
+    <g transform="translate(160, 150)">
+      <circle r="28" fill="#3178c6" opacity="0.1">
+        <animate attributeName="opacity" values="0.05;0.2;0.05" dur="4s" begin="0.5s" repeatCount="indefinite"/>
+      </circle>
+      <image xlink:href="https://skillicons.dev/icons?i=ts" x="-20" y="-20" width="40" height="40" filter="url(#iconGlow)">
+        <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="6s" begin="0.5s" repeatCount="indefinite"/>
+      </image>
+    </g>
+    
+    <!-- React -->
+    <g transform="translate(240, 150)">
+      <circle r="28" fill="#61dafb" opacity="0.1">
+        <animate attributeName="opacity" values="0.05;0.2;0.05" dur="4s" begin="1s" repeatCount="indefinite"/>
+      </circle>
+      <image xlink:href="https://skillicons.dev/icons?i=react" x="-20" y="-20" width="40" height="40" filter="url(#iconGlow)">
+        <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="6s" begin="1s" repeatCount="indefinite"/>
+      </image>
+    </g>
+    
+    <!-- Next.js -->
+    <g transform="translate(320, 150)">
+      <circle r="28" fill="#000000" opacity="0.08">
+        <animate attributeName="opacity" values="0.03;0.15;0.03" dur="4s" begin="1.5s" repeatCount="indefinite"/>
+      </circle>
+      <image xlink:href="https://skillicons.dev/icons?i=nextjs" x="-20" y="-20" width="40" height="40" filter="url(#iconGlow)">
+        <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="6s" begin="1.5s" repeatCount="indefinite"/>
+      </image>
+    </g>
+    
+    <!-- Node.js -->
+    <g transform="translate(400, 150)">
+      <circle r="28" fill="#339933" opacity="0.1">
+        <animate attributeName="opacity" values="0.05;0.2;0.05" dur="4s" begin="2s" repeatCount="indefinite"/>
+      </circle>
+      <image xlink:href="https://skillicons.dev/icons?i=nodejs" x="-20" y="-20" width="40" height="40" filter="url(#iconGlow)">
+        <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="6s" begin="2s" repeatCount="indefinite"/>
+      </image>
+    </g>
+    
+    <!-- Python -->
+    <g transform="translate(480, 150)">
+      <circle r="28" fill="#3776ab" opacity="0.1">
+        <animate attributeName="opacity" values="0.05;0.2;0.05" dur="4s" begin="2.5s" repeatCount="indefinite"/>
+      </circle>
+      <image xlink:href="https://skillicons.dev/icons?i=python" x="-20" y="-20" width="40" height="40" filter="url(#iconGlow)">
+        <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="6s" begin="2.5s" repeatCount="indefinite"/>
+      </image>
+    </g>
+    
+    <!-- Java -->
+    <g transform="translate(560, 150)">
+      <circle r="28" fill="#ed8b00" opacity="0.1">
+        <animate attributeName="opacity" values="0.05;0.2;0.05" dur="4s" begin="3s" repeatCount="indefinite"/>
+      </circle>
+      <image xlink:href="https://skillicons.dev/icons?i=java" x="-20" y="-20" width="40" height="40" filter="url(#iconGlow)">
+        <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="6s" begin="3s" repeatCount="indefinite"/>
+      </image>
+    </g>
+    
+    <!-- C++ -->
+    <g transform="translate(640, 150)">
+      <circle r="28" fill="#00599c" opacity="0.1">
+        <animate attributeName="opacity" values="0.05;0.2;0.05" dur="4s" begin="3.5s" repeatCount="indefinite"/>
+      </circle>
+      <image xlink:href="https://skillicons.dev/icons?i=cpp" x="-20" y="-20" width="40" height="40" filter="url(#iconGlow)">
+        <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="6s" begin="3.5s" repeatCount="indefinite"/>
+      </image>
+    </g>
   </g>
   
-  <!-- TypeScript -->
-  <g transform="translate(180, 60)">
-    <circle r="45" fill="#3178c6" opacity="0.2" filter="url(#glow)">
-      <animate attributeName="r" values="40;50;40" dur="4s" begin="0.5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="6s" begin="1s" repeatCount="indefinite"/>
-    </circle>
-    <image xlink:href="https://skillicons.dev/icons?i=ts" x="-40" y="-40" width="80" height="80" filter="url(#shadow)">
-      <animateTransform attributeName="transform" type="scale" values="0.8;1.1;0.8" dur="6s" begin="1s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="6s" begin="1s" repeatCount="indefinite"/>
-    </image>
-    <text x="0" y="65" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="12" font-weight="bold">TypeScript</text>
+  <!-- Databases Row -->
+  <text x="80" y="230" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#475569">Databases</text>
+  
+  <g class="databases-row">
+    <!-- PostgreSQL -->
+    <g transform="translate(80, 250)">
+      <circle r="28" fill="#336791" opacity="0.1">
+        <animate attributeName="opacity" values="0.05;0.2;0.05" dur="4s" begin="4s" repeatCount="indefinite"/>
+      </circle>
+      <image xlink:href="https://skillicons.dev/icons?i=postgres" x="-20" y="-20" width="40" height="40" filter="url(#iconGlow)">
+        <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="6s" begin="4s" repeatCount="indefinite"/>
+      </image>
+    </g>
+    
+    <!-- MongoDB -->
+    <g transform="translate(160, 250)">
+      <circle r="28" fill="#47a248" opacity="0.1">
+        <animate attributeName="opacity" values="0.05;0.2;0.05" dur="4s" begin="4.5s" repeatCount="indefinite"/>
+      </circle>
+      <image xlink:href="https://skillicons.dev/icons?i=mongodb" x="-20" y="-20" width="40" height="40" filter="url(#iconGlow)">
+        <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="6s" begin="4.5s" repeatCount="indefinite"/>
+      </image>
+    </g>
+    
+    <!-- Firebase -->
+    <g transform="translate(240, 250)">
+      <circle r="28" fill="#ffca28" opacity="0.1">
+        <animate attributeName="opacity" values="0.05;0.2;0.05" dur="4s" begin="5s" repeatCount="indefinite"/>
+      </circle>
+      <image xlink:href="https://skillicons.dev/icons?i=firebase" x="-20" y="-20" width="40" height="40" filter="url(#iconGlow)">
+        <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="6s" begin="5s" repeatCount="indefinite"/>
+      </image>
+    </g>
   </g>
   
-  <!-- React -->
-  <g transform="translate(300, 60)">
-    <circle r="45" fill="#61dafb" opacity="0.2" filter="url(#glow)">
-      <animate attributeName="r" values="40;50;40" dur="4s" begin="1s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="6s" begin="2s" repeatCount="indefinite"/>
-    </circle>
-    <image xlink:href="https://skillicons.dev/icons?i=react" x="-40" y="-40" width="80" height="80" filter="url(#shadow)">
-      <animateTransform attributeName="transform" type="scale" values="0.8;1.1;0.8" dur="6s" begin="2s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="6s" begin="2s" repeatCount="indefinite"/>
-    </image>
-    <text x="0" y="65" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="12" font-weight="bold">React</text>
+  <!-- Tools Row -->
+  <text x="80" y="330" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#475569">Tools & Environment</text>
+  
+  <g class="tools-row">
+    <!-- Git -->
+    <g transform="translate(80, 350)">
+      <circle r="28" fill="#f05032" opacity="0.1">
+        <animate attributeName="opacity" values="0.05;0.2;0.05" dur="4s" begin="5.5s" repeatCount="indefinite"/>
+      </circle>
+      <image xlink:href="https://skillicons.dev/icons?i=git" x="-20" y="-20" width="40" height="40" filter="url(#iconGlow)">
+        <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="6s" begin="5.5s" repeatCount="indefinite"/>
+      </image>
+    </g>
+    
+    <!-- Linux -->
+    <g transform="translate(160, 350)">
+      <circle r="28" fill="#fcc624" opacity="0.1">
+        <animate attributeName="opacity" values="0.05;0.2;0.05" dur="4s" begin="6s" repeatCount="indefinite"/>
+      </circle>
+      <image xlink:href="https://skillicons.dev/icons?i=linux" x="-20" y="-20" width="40" height="40" filter="url(#iconGlow)">
+        <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="6s" begin="6s" repeatCount="indefinite"/>
+      </image>
+    </g>
+    
+    <!-- VSCode -->
+    <g transform="translate(240, 350)">
+      <circle r="28" fill="#007acc" opacity="0.1">
+        <animate attributeName="opacity" values="0.05;0.2;0.05" dur="4s" begin="6.5s" repeatCount="indefinite"/>
+      </circle>
+      <image xlink:href="https://skillicons.dev/icons?i=vscode" x="-20" y="-20" width="40" height="40" filter="url(#iconGlow)">
+        <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="6s" begin="6.5s" repeatCount="indefinite"/>
+      </image>
+    </g>
+    
+    <!-- Figma -->
+    <g transform="translate(320, 350)">
+      <circle r="28" fill="#f24e1e" opacity="0.1">
+        <animate attributeName="opacity" values="0.05;0.2;0.05" dur="4s" begin="7s" repeatCount="indefinite"/>
+      </circle>
+      <image xlink:href="https://skillicons.dev/icons?i=figma" x="-20" y="-20" width="40" height="40" filter="url(#iconGlow)">
+        <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="6s" begin="7s" repeatCount="indefinite"/>
+      </image>
+    </g>
   </g>
   
-  <!-- Next.js -->
-  <g transform="translate(420, 60)">
-    <circle r="45" fill="#000" opacity="0.1" filter="url(#glow)">
-      <animate attributeName="r" values="40;50;40" dur="4s" begin="1.5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.05;0.2;0.05" dur="6s" begin="3s" repeatCount="indefinite"/>
-    </circle>
-    <image xlink:href="https://skillicons.dev/icons?i=nextjs" x="-40" y="-40" width="80" height="80" filter="url(#shadow)">
-      <animateTransform attributeName="transform" type="scale" values="0.8;1.1;0.8" dur="6s" begin="3s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="6s" begin="3s" repeatCount="indefinite"/>
-    </image>
-    <text x="0" y="65" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Next.js</text>
+  <!-- Testing Row -->
+  <text x="80" y="430" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#475569">Testing</text>
+  
+  <g class="testing-row">
+    <!-- Playwright -->
+    <g transform="translate(80, 450)">
+      <circle r="28" fill="#2eac4a" opacity="0.1">
+        <animate attributeName="opacity" values="0.05;0.2;0.05" dur="4s" begin="7.5s" repeatCount="indefinite"/>
+      </circle>
+      <image xlink:href="https://skillicons.dev/icons?i=playwright" x="-20" y="-20" width="40" height="40" filter="url(#iconGlow)">
+        <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="6s" begin="7.5s" repeatCount="indefinite"/>
+      </image>
+    </g>
+    
+    <!-- Vitest -->
+    <g transform="translate(160, 450)">
+      <circle r="28" fill="#729b1b" opacity="0.1">
+        <animate attributeName="opacity" values="0.05;0.2;0.05" dur="4s" begin="8s" repeatCount="indefinite"/>
+      </circle>
+      <image xlink:href="https://skillicons.dev/icons?i=vitest" x="-20" y="-20" width="40" height="40" filter="url(#iconGlow)">
+        <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="6s" begin="8s" repeatCount="indefinite"/>
+      </image>
+    </g>
   </g>
   
-  <!-- Node.js -->
-  <g transform="translate(540, 60)">
-    <circle r="45" fill="#339933" opacity="0.2" filter="url(#glow)">
-      <animate attributeName="r" values="40;50;40" dur="4s" begin="2s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="6s" begin="4s" repeatCount="indefinite"/>
-    </circle>
-    <image xlink:href="https://skillicons.dev/icons?i=nodejs" x="-40" y="-40" width="80" height="80" filter="url(#shadow)">
-      <animateTransform attributeName="transform" type="scale" values="0.8;1.1;0.8" dur="6s" begin="4s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="6s" begin="4s" repeatCount="indefinite"/>
-    </image>
-    <text x="0" y="65" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Node.js</text>
+  <!-- Connecting lines with staggered animation -->
+  <g opacity="0.3" stroke="url(#accentGradient)" stroke-width="1" fill="none">
+    <!-- Languages connections -->
+    <path d="M 120 170 Q 140 160 160 170">
+      <animate attributeName="opacity" values="0;0.5;0" dur="1s" begin="1s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 200 170 Q 220 160 240 170">
+      <animate attributeName="opacity" values="0;0.5;0" dur="1s" begin="1.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 280 170 Q 300 160 320 170">
+      <animate attributeName="opacity" values="0;0.5;0" dur="1s" begin="2s" repeatCount="indefinite"/>
+    </path>
   </g>
-  
-  <!-- Python -->
-  <g transform="translate(660, 60)">
-    <circle r="45" fill="#3776ab" opacity="0.2" filter="url(#glow)">
-      <animate attributeName="r" values="40;50;40" dur="4s" begin="2.5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.1;0.3;0.1" dur="6s" begin="5s" repeatCount="indefinite"/>
-    </circle>
-    <image xlink:href="https://skillicons.dev/icons?i=python" x="-40" y="-40" width="80" height="80" filter="url(#shadow)">
-      <animateTransform attributeName="transform" type="scale" values="0.8;1.1;0.8" dur="6s" begin="5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="6s" begin="5s" repeatCount="indefinite"/>
-    </image>
-    <text x="0" y="65" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Python</text>
-  </g>
-  
-  <!-- Connecting lines animation -->
-  <path d="M 120 100 Q 150 80 180 100" stroke="url(#bgGradient)" stroke-width="2" fill="none" opacity="0.6">
-    <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="1.5s" repeatCount="indefinite"/>
-  </path>
-  <path d="M 240 100 Q 270 80 300 100" stroke="url(#bgGradient)" stroke-width="2" fill="none" opacity="0.6">
-    <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="2.5s" repeatCount="indefinite"/>
-  </path>
-  <path d="M 360 100 Q 390 80 420 100" stroke="url(#bgGradient)" stroke-width="2" fill="none" opacity="0.6">
-    <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="3.5s" repeatCount="indefinite"/>
-  </path>
-  <path d="M 480 100 Q 510 80 540 100" stroke="url(#bgGradient)" stroke-width="2" fill="none" opacity="0.6">
-    <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="4.5s" repeatCount="indefinite"/>
-  </path>
-  <path d="M 600 100 Q 630 80 660 100" stroke="url(#bgGradient)" stroke-width="2" fill="none" opacity="0.6">
-    <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="5.5s" repeatCount="indefinite"/>
-  </path>
-  
-  <!-- Title -->
-  <text x="400" y="30" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="18" font-weight="bold" opacity="0.8">Tech Stack</text>
 </svg>
