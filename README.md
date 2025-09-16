@@ -55,7 +55,7 @@ I’m a fullstack developer with a passion for building robust, scalable, and us
 
 I’m always open to collaboration, remote opportunities, and meaningful conversations in tech.
 
-📫 **[Portfolio](#)** • **[LinkedIn](#)** • **[Email](mailto:your-email@example.com)**
+📫 **[Portfolio](#)** • **[LinkedIn](#)** • **[Email](mailto:popiesailor@gmail.com)**
 
 ---
 
