@@ -15,12 +15,7 @@ I work across the stack — from user-facing interfaces to backend services and 
 
 ## 📈 GitHub Activity
 
-<p align="center">
-  <img 
-    src="https://github-readme-stats.vercel.app/api?username=Popie52&show_icons=true&hide_border=true" 
-    alt="GitHub Stats" 
-  />
-</p>
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Popie52&show_icons=true)
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Popie52&theme=react-dark&hide_border=true" />
