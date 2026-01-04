@@ -9,15 +9,17 @@ I work across the stack — from user-facing interfaces to backend services and 
 
 ## 🧰 Tech Stack
 
-<p align="center"> <img src="https://skillicons.dev/icons?i=js,ts,react,nodejs,python,java,cpp" /> <br/> <img src="https://skillicons.dev/icons?i=postgres,mongodb,firebase" /> <br/> <img src="https://skillicons.dev/icons?i=git,linux,vscode" /> <br/> <img src="https://skillicons.dev/icons?i=playwright,vitest" /> </p>
+<p align="center"> <img src="https://skillicons.dev/icons?i=js,ts,react,nodejs,python,java,cpp" /> <br/> <img src="https://skillicons.dev/icons?i=postgres,mongodb" /> <br/> <img src="https://skillicons.dev/icons?i=git,linux,vscode" /> <br/> <img src="https://skillicons.dev/icons?i=playwright,vitest" /> </p>
 
 ---
 
 ## 📈 GitHub Activity
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Popie52&show_icons=true&theme=radical&hide_border=true" width="48%" />
-  <img src="https://streak-stats.demolab.com?user=Popie52&theme=radical&hide_border=true" width="48%" />
+  <img 
+    src="https://github-readme-stats.vercel.app/api?username=Popie52&show_icons=true&hide_border=true" 
+    alt="GitHub Stats" 
+  />
 </p>
 
 <p align="center">
