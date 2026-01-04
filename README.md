@@ -2,7 +2,8 @@
 
 > _"Code is like humor. When you have to explain it, it’s bad." – Cory House_
 
-I’m a fullstack developer with a passion for building robust, scalable, and user-focused applications. From intuitive frontends to efficient backends, I enjoy transforming ideas into well-engineered solutions.
+Software developer interested in building reliable, scalable systems and contributing to open-source projects.
+I work across the stack — from user-facing interfaces to backend services and system-level components.
 
 ---
 
@@ -36,10 +37,11 @@ I’m a fullstack developer with a passion for building robust, scalable, and us
 -->
 ## 📚 Currently Exploring
 
-- Advanced React & TypeScript patterns  
-- CI/CD automation and testing workflows  
-- Scalable backend architecture (microservices, queues)  
-- DevOps tools and cloud deployment strategies
+- Software design & architecture
+- Advanced React & TypeScript (UI as a system)
+- Backend services & APIs
+- Testing, debugging, and code quality
+- Open-source development workflows
 
 ---
 
