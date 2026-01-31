@@ -9,7 +9,7 @@ I work across the stack — from user-facing interfaces to backend services and 
 
 ## 🧰 Tech Stack
 
-<p align="center"> <img src="https://skillicons.dev/icons?i=js,ts,react,nodejs,python,java,cpp" /> <br/> <img src="https://skillicons.dev/icons?i=postgres,mongodb" /> <br/> <img src="https://skillicons.dev/icons?i=git,linux,vscode" /> <br/> <img src="https://skillicons.dev/icons?i=playwright,vitest" /> </p>
+<p align="center"> <img src="https://skillicons.dev/icons?i=js,ts,react,nodejs,python,golang,cpp" /> <br/> <img src="https://skillicons.dev/icons?i=postgres,mongodb" /> <br/> <img src="https://skillicons.dev/icons?i=git,linux,vscode" /> <br/> <img src="https://skillicons.dev/icons?i=playwright,vitest" /> </p>
 
 ---
 
@@ -44,7 +44,7 @@ I work across the stack — from user-facing interfaces to backend services and 
 
 I’m always open to collaboration, remote opportunities, and meaningful conversations in tech.
 
-📫 **[Portfolio](#)** • **[Email](mailto:popiesailor@gmail.com)**
+• **[Email](mailto:popiesailor@gmail.com)**
 
 ---
 
