@@ -1,0 +1,72 @@
+<svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
+      
+      .bg { fill: #020408; }
+      .grid-line { stroke: #0a1628; stroke-width: 0.5; }
+      .scan { fill: #00d4ff; opacity: 0; animation: scan 4s ease-in-out infinite; }
+      .name { font-family: 'Share Tech Mono', monospace; font-size: 52px; fill: #00d4ff; filter: url(#glow); animation: flicker 6s ease-in-out infinite; }
+      .sub { font-family: 'Share Tech Mono', monospace; font-size: 13px; fill: #3a7ca5; letter-spacing: 4px; }
+      .cursor { fill: #00d4ff; animation: blink 1s step-end infinite; }
+      .bracket { font-family: 'Share Tech Mono', monospace; font-size: 52px; fill: #0a3d5c; }
+      .corner { stroke: #00d4ff; stroke-width: 1.5; fill: none; opacity: 0.6; }
+      .scanline { fill: none; stroke: #00d4ff; stroke-width: 0.3; opacity: 0.04; }
+
+      @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+      @keyframes flicker { 0%,100%{opacity:1} 92%{opacity:1} 93%{opacity:0.8} 94%{opacity:1} 97%{opacity:0.95} 98%{opacity:1} }
+      @keyframes scan { 0%{opacity:0;transform:translateY(-200px)} 10%{opacity:0.06} 90%{opacity:0.06} 100%{opacity:0;transform:translateY(200px)} }
+    </style>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="200" class="bg"/>
+  
+  <!-- Grid lines vertical -->
+  <line x1="80" y1="0" x2="80" y2="200" class="grid-line"/>
+  <line x1="160" y1="0" x2="160" y2="200" class="grid-line"/>
+  <line x1="240" y1="0" x2="240" y2="200" class="grid-line"/>
+  <line x1="320" y1="0" x2="320" y2="200" class="grid-line"/>
+  <line x1="400" y1="0" x2="400" y2="200" class="grid-line"/>
+  <line x1="480" y1="0" x2="480" y2="200" class="grid-line"/>
+  <line x1="560" y1="0" x2="560" y2="200" class="grid-line"/>
+  <line x1="640" y1="0" x2="640" y2="200" class="grid-line"/>
+  <line x1="720" y1="0" x2="720" y2="200" class="grid-line"/>
+
+  <!-- Grid lines horizontal -->
+  <line x1="0" y1="50" x2="800" y2="50" class="grid-line"/>
+  <line x1="0" y1="100" x2="800" y2="100" class="grid-line"/>
+  <line x1="0" y1="150" x2="800" y2="150" class="grid-line"/>
+
+  <!-- Scan effect -->
+  <rect width="800" height="40" class="scan"/>
+
+  <!-- Corner decorations -->
+  <polyline points="20,10 8,10 8,30" class="corner"/>
+  <polyline points="780,10 792,10 792,30" class="corner"/>
+  <polyline points="20,190 8,190 8,170" class="corner"/>
+  <polyline points="780,190 792,190 792,170" class="corner"/>
+
+  <!-- Side brackets -->
+  <text x="38" y="118" class="bracket">[</text>
+  <text x="748" y="118" class="bracket">]</text>
+
+  <!-- Main name -->
+  <text x="400" y="115" text-anchor="middle" class="name">POPIE52</text>
+
+  <!-- Subtitle -->
+  <text x="400" y="148" text-anchor="middle" class="sub">SOFTWARE DEVELOPER · OPEN SOURCE</text>
+
+  <!-- Terminal prompt line -->
+  <text x="400" y="172" text-anchor="middle" font-family="Share Tech Mono, monospace" font-size="11" fill="#1a4a6b">~/dev $&gt; building reliable systems_</text>
+  <rect x="573" y="162" width="8" height="12" class="cursor"/>
+
+  <!-- Top status line -->
+  <text x="20" y="28" font-family="Share Tech Mono, monospace" font-size="10" fill="#0a3d5c">SYS::ONLINE</text>
+  <text x="400" y="28" text-anchor="middle" font-family="Share Tech Mono, monospace" font-size="10" fill="#0a3d5c">◈ INITIALIZING PROFILE ◈</text>
+  <text x="780" y="28" text-anchor="end" font-family="Share Tech Mono, monospace" font-size="10" fill="#0a3d5c">v2.0.26</text>
+</svg>
