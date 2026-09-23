@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Popie52 / README preview</title>
+  <style>
+    :root {
+      --canvas: #f6f8fa;
+      --paper: #ffffff;
+      --ink: #1f2328;
+      --muted: #656d76;
+      --rule: #d0d7de;
+      --link: #0969da;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--canvas); color: var(--ink); font-family: var(--sans); }
+    .gh-top {
+      height: 48px;
+      background: #010409;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0 20px;
+      font-size: 14px;
+    }
+    .gh-top strong { font-weight: 600; letter-spacing: 0.01em; }
+    .gh-top span { color: #9198a1; }
+    .wrap {
+      max-width: 1012px;
+      margin: 24px auto 64px;
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: 6px;
+      padding: 24px 32px 32px;
+    }
+    .readme img { display: block; width: 100%; height: auto; }
+    .readme p { text-align: center; color: var(--ink); font-size: 16px; line-height: 1.5; margin: 12px 0 16px; }
+    .readme a { color: var(--link); text-decoration: none; }
+    .readme a:hover { text-decoration: underline; }
+    .readme .fig { margin: 0 0 8px; }
+    .table-wrap { overflow-x: auto; margin: 4px 0 12px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0;
+      font-size: 14px;
+    }
+    th, td {
+      border: 1px solid var(--rule);
+      padding: 8px 12px;
+      text-align: left;
+    }
+    th { background: #f6f8fa; font-weight: 600; }
+    td:first-child, th:first-child { text-align: center; }
+    .caption {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 12px;
+    }
+    @media (max-width: 720px) {
+      .wrap { margin: 0; border: 0; border-radius: 0; padding: 16px 12px 28px; }
+      table { font-size: 12px; }
+      th, td { padding: 8px 6px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="gh-top">
+    <strong>Popie52</strong>
+    <span>/</span>
+    <span>README.md / local preview (not GitHub)</span>
+  </header>
+  <main class="wrap">
+    <p class="caption">Profile README / visual novel file 01</p>
+    <article class="readme">
+      <div class="fig" align="center">
+        <img src="./assets/banner.svg" alt="Prasad Jadhav - visual novel character file. Software, systems, AI. Systems first." width="100%" />
+      </div>
+      <p>
+        systems first, applications second
+        &nbsp;/&nbsp;
+        <a href="https://github.com/Popie52">github.com/Popie52</a>
+      </p>
+      <div class="fig" align="center">
+        <img src="./assets/routes.svg" alt="Story routes: PulseNet, DocuMind, job-queue-go, Sentinel." width="100%" />
+      </div>
+      <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Ch</th>
+            <th>Route</th>
+            <th>What it is</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>01</strong></td>
+            <td><a href="https://github.com/Popie52/PulseNet">PulseNet</a></td>
+            <td>Realtime messaging fabric (auth + message services)</td>
+          </tr>
+          <tr>
+            <td><strong>02</strong></td>
+            <td><a href="https://github.com/Popie52/DocuMind">DocuMind</a></td>
+            <td>Telegram RAG assistant: parse, embed, cite</td>
+          </tr>
+          <tr>
+            <td><strong>03</strong></td>
+            <td><a href="https://github.com/Popie52/job-queue-go">job-queue-go</a></td>
+            <td>Crash-safe priority queue; Postgres is source of truth</td>
+          </tr>
+          <tr>
+            <td><strong>04</strong></td>
+            <td><a href="https://github.com/Popie52/sentinel">Sentinel</a></td>
+            <td>TCP scanner built from POSIX sockets upward</td>
+          </tr>
+          <tr>
+            <td>S1</td>
+            <td><a href="https://github.com/Popie52/genie-cli">genie-cli</a></td>
+            <td>Local Gemini CLI that reads and runs project files</td>
+          </tr>
+          <tr>
+            <td>S2</td>
+            <td><a href="https://github.com/Popie52/ai-agent-pipeline">ai-agent-pipeline</a></td>
+            <td>Five-agent Gemini pipeline with a trace UI</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="fig" align="center">
+        <img src="./assets/status.svg" alt="Status window: deepening distributed systems, building Go, exploring AI, contributing open source." width="100%" />
+      </div>
+      <div class="fig" align="center">
+        <img src="./assets/epilogue.svg" alt="Epilogue: Understand the system. Then decide where the abstraction belongs." width="100%" />
+      </div>
+      <p>
+        <a href="https://github.com/Popie52">GitHub</a>
+        /
+        <a href="https://github.com/Popie52?tab=repositories">Repositories</a>
+        /
+        <a href="https://github.com/Popie52/Popie52">This profile</a>
+      </p>
+    </article>
+  </main>
+</body>
+</html>

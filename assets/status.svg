@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="268" viewBox="0 0 1200 268" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Status window: current chapter distributed systems, Go, AI, open source">
+  <defs>
+    <linearGradient id="sbg" x1="0" y1="0" x2="1200" y2="268" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#14102E"/>
+      <stop offset="1" stop-color="#24144A"/>
+    </linearGradient>
+    <pattern id="stone" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1.05" fill="#FFD6EA" opacity="0.10"/>
+    </pattern>
+    <style>
+      .blink { animation: blink 1.6s steps(2, end) infinite; }
+      @keyframes blink { 50% { opacity: .2 } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="268" fill="url(#sbg)"/>
+  <rect width="1200" height="268" fill="url(#stone)"/>
+  <rect x="10" y="10" width="1180" height="248" rx="18" stroke="#FFD36A" stroke-width="2"/>
+  <rect x="18" y="18" width="1164" height="232" rx="12" stroke="#6EF0E8" stroke-width="1" opacity="0.35"/>
+
+  <text x="48" y="52" fill="#FFD36A" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="3.2">STATUS</text>
+  <text x="48" y="82" fill="#FFF6E8" font-family="ui-sans-serif, system-ui, Inter, Arial, sans-serif" font-size="24" font-weight="800">Now playing</text>
+  <circle class="blink" cx="1150" cy="48" r="6" fill="#FF4D8A"/>
+  <text x="1134" y="54" text-anchor="end" fill="#FFB4D2" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">LIVE</text>
+
+  <!-- bars -->
+  <g font-family="ui-sans-serif, system-ui, Inter, Arial, sans-serif">
+    <text x="48" y="128" fill="#C9C6E8" font-size="15">distributed systems</text>
+    <text x="980" y="128" fill="#FF4D8A" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">DEEPENING</text>
+    <rect x="320" y="114" width="640" height="16" rx="8" fill="#2A2158"/>
+    <rect x="320" y="114" width="470" height="16" rx="8" fill="#FF4D8A"/>
+
+    <text x="48" y="168" fill="#C9C6E8" font-size="15">Go / systems programming</text>
+    <text x="980" y="168" fill="#6EF0E8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">BUILDING</text>
+    <rect x="320" y="154" width="640" height="16" rx="8" fill="#2A2158"/>
+    <rect x="320" y="154" width="390" height="16" rx="8" fill="#6EF0E8"/>
+
+    <text x="48" y="208" fill="#C9C6E8" font-size="15">AI infrastructure</text>
+    <text x="980" y="208" fill="#FFD36A" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">EXPLORING</text>
+    <rect x="320" y="194" width="640" height="16" rx="8" fill="#2A2158"/>
+    <rect x="320" y="194" width="280" height="16" rx="8" fill="#FFD36A"/>
+
+    <text x="48" y="248" fill="#C9C6E8" font-size="15">open source</text>
+    <text x="980" y="248" fill="#C9C6E8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">CONTRIBUTING</text>
+    <rect x="320" y="234" width="640" height="16" rx="8" fill="#2A2158"/>
+    <rect x="320" y="234" width="220" height="16" rx="8" fill="#C9C6E8"/>
+  </g>
+</svg>

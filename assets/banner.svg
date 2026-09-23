@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="540" viewBox="0 0 1200 540" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Prasad Jadhav visual novel character file. Systems first, applications second.">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="540" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#14102E"/>
+      <stop offset="0.55" stop-color="#2A1860"/>
+      <stop offset="0.82" stop-color="#7A2E6A"/>
+      <stop offset="1" stop-color="#E06A6A"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1008 92) scale(130)">
+      <stop stop-color="#FFE7C2" stop-opacity="0.9"/>
+      <stop offset="0.45" stop-color="#FFC3D6" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#FFC3D6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hoodie" x1="820" y1="300" x2="1100" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3A4278"/>
+      <stop offset="1" stop-color="#1E2448"/>
+    </linearGradient>
+    <pattern id="tone" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1.05" fill="#FFD6EA" opacity="0.14"/>
+    </pattern>
+    <style>
+      .twinkle { animation: twinkle 2.6s ease-in-out infinite; }
+      .twinkle2 { animation: twinkle 3.1s ease-in-out infinite 0.7s; }
+      .win { animation: win 3.4s steps(2, end) infinite; }
+      .win2 { animation: win 4.2s steps(2, end) infinite 1.1s; }
+      .caret { animation: caret 1.05s steps(2, end) infinite; }
+      .petal { animation: drift 14s linear infinite; }
+      .petal2 { animation: drift 18s linear infinite 4s; }
+      .petal3 { animation: drift 16s linear infinite 8s; }
+      @keyframes twinkle { 0%,100% { opacity: .25 } 50% { opacity: 1 } }
+      @keyframes win { 50% { opacity: .15 } }
+      @keyframes caret { 50% { opacity: 0 } }
+      @keyframes drift {
+        0% { transform: translate(0,0) rotate(0deg); opacity: .9; }
+        100% { transform: translate(48px, 420px) rotate(170deg); opacity: .15; }
+      }
+    </style>
+  </defs>
+
+  <!-- night stage -->
+  <rect width="1200" height="540" fill="url(#sky)"/>
+  <rect width="1200" height="540" fill="url(#tone)"/>
+  <rect x="10" y="10" width="1180" height="520" rx="18" stroke="#6EF0E8" stroke-width="2" opacity="0.85"/>
+  <rect x="18" y="18" width="1164" height="504" rx="12" stroke="#FF4D8A" stroke-width="1" opacity="0.45"/>
+
+  <!-- moon -->
+  <circle cx="1008" cy="92" r="128" fill="url(#moonGlow)"/>
+  <circle cx="1008" cy="92" r="58" fill="#FFF0D2"/>
+  <circle cx="1022" cy="82" r="58" fill="#E8A0C0" opacity="0.18"/>
+  <circle cx="990" cy="78" r="7" fill="#F0C8A0" opacity="0.35"/>
+  <circle cx="1028" cy="108" r="11" fill="#F0C8A0" opacity="0.28"/>
+
+  <!-- stars -->
+  <g fill="#FFF6E8">
+    <circle class="twinkle" cx="86" cy="54" r="1.6"/>
+    <circle class="twinkle2" cx="160" cy="92" r="1.2"/>
+    <circle class="twinkle" cx="240" cy="40" r="1.4"/>
+    <circle class="twinkle2" cx="420" cy="70" r="1.3"/>
+    <circle class="twinkle" cx="510" cy="38" r="1.1"/>
+    <circle class="twinkle2" cx="640" cy="58" r="1.5"/>
+    <circle class="twinkle" cx="720" cy="36" r="1.2"/>
+    <circle class="twinkle2" cx="880" cy="48" r="1.4"/>
+    <circle class="twinkle" cx="1140" cy="64" r="1.3"/>
+    <circle class="twinkle2" cx="110" cy="130" r="1.1"/>
+  </g>
+  <g fill="#6EF0E8" opacity="0.9">
+    <path class="twinkle" d="M70 100 L73 108 L81 111 L73 114 L70 122 L67 114 L59 111 L67 108 Z"/>
+    <path class="twinkle2" d="M1180 40 L1182 46 L1188 48 L1182 50 L1180 56 L1178 50 L1172 48 L1178 46 Z"/>
+    <path class="twinkle" d="M560 88 L562 93 L567 95 L562 97 L560 102 L558 97 L553 95 L558 93 Z"/>
+  </g>
+
+  <!-- falling original petals (geometric, not a studio mark) -->
+  <g fill="#FF7AA8" opacity="0.85">
+    <g class="petal">
+      <ellipse cx="300" cy="20" rx="7" ry="11" transform="rotate(-20 300 20)"/>
+      <ellipse cx="312" cy="24" rx="7" ry="11" transform="rotate(40 312 24)"/>
+      <ellipse cx="294" cy="30" rx="7" ry="11" transform="rotate(-80 294 30)"/>
+      <circle cx="304" cy="26" r="3.5" fill="#FFE4F0"/>
+    </g>
+    <g class="petal2">
+      <ellipse cx="640" cy="-10" rx="6" ry="10" transform="rotate(15 640 -10)"/>
+      <ellipse cx="650" cy="-6" rx="6" ry="10" transform="rotate(70 650 -6)"/>
+      <ellipse cx="636" cy="0" rx="6" ry="10" transform="rotate(-50 636 0)"/>
+      <circle cx="643" cy="-4" r="3" fill="#FFE4F0"/>
+    </g>
+    <g class="petal3">
+      <ellipse cx="1080" cy="30" rx="6" ry="10" transform="rotate(8 1080 30)"/>
+      <ellipse cx="1090" cy="34" rx="6" ry="10" transform="rotate(75 1090 34)"/>
+      <ellipse cx="1074" cy="38" rx="6" ry="10" transform="rotate(-60 1074 38)"/>
+      <circle cx="1082" cy="35" r="3" fill="#FFE4F0"/>
+    </g>
+  </g>
+
+  <!-- city sits in the gap and far right so the nameplate stays on sky -->
+  <g fill="#0B0E22">
+    <rect x="0" y="500" width="1200" height="40"/>
+    <rect x="520" y="300" width="48" height="200"/>
+    <rect x="574" y="248" width="62" height="252"/>
+    <rect x="642" y="286" width="40" height="214"/>
+    <rect x="688" y="322" width="70" height="178"/>
+    <path d="M574 248 L605 214 L636 248Z"/>
+    <rect x="1110" y="300" width="54" height="200"/>
+    <rect x="1164" y="332" width="36" height="168"/>
+  </g>
+  <g fill="#6EF0E8">
+    <rect class="win" x="532" y="318" width="6" height="8"/>
+    <rect class="win2" x="546" y="338" width="6" height="8"/>
+    <rect class="win" x="588" y="268" width="6" height="8"/>
+    <rect class="win2" x="604" y="288" width="6" height="8"/>
+    <rect class="win" x="652" y="304" width="6" height="8"/>
+    <rect class="win2" x="1122" y="318" width="6" height="8"/>
+    <rect class="win" x="1136" y="338" width="6" height="8"/>
+  </g>
+  <g fill="#FF4D8A" opacity="0.85">
+    <rect class="win2" x="588" y="308" width="6" height="8"/>
+    <rect class="win" x="700" y="344" width="6" height="8"/>
+  </g>
+
+  <!-- nameplate -->
+  <g font-family="ui-sans-serif, system-ui, Inter, Arial, sans-serif">
+    <text x="48" y="64" fill="#6EF0E8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="3.2">PLAYER FILE  /  01</text>
+    <text x="48" y="88" fill="#FFB4D2" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="2.4">SYSTEMS FIRST</text>
+    <text x="48" y="168" fill="#FFF6E8" font-size="64" font-weight="800" letter-spacing="-2.4">PRASAD</text>
+    <text x="50" y="214" fill="#FF4D8A" font-size="32" font-weight="700" letter-spacing="6">JADHAV</text>
+    <text x="50" y="248" fill="#C9C6E8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">aka Popie52  /  IND</text>
+    <text x="50" y="286" fill="#FFF6E8" font-size="18" font-weight="600">software  /  systems  /  AI</text>
+  </g>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">
+    <rect x="48" y="308" width="58" height="26" rx="13" fill="#FF4D8A"/>
+    <text x="77" y="326" text-anchor="middle" fill="#FFF6E8">GO</text>
+    <rect x="114" y="308" width="84" height="26" rx="13" fill="#2A2158" stroke="#6EF0E8" stroke-width="1.2"/>
+    <text x="156" y="326" text-anchor="middle" fill="#6EF0E8">PYTHON</text>
+    <rect x="206" y="308" width="108" height="26" rx="13" fill="#2A2158" stroke="#FFD36A" stroke-width="1.2"/>
+    <text x="260" y="326" text-anchor="middle" fill="#FFD36A">TYPESCRIPT</text>
+    <rect x="322" y="308" width="58" height="26" rx="13" fill="#2A2158" stroke="#FF4D8A" stroke-width="1.2"/>
+    <text x="351" y="326" text-anchor="middle" fill="#FF4D8A">C++</text>
+  </g>
+
+  <!-- original OC: night-shift engineer, 3/4 bust -->
+  <g transform="translate(748, 70)">
+    <path d="M92 250 C48 280 36 360 48 430 L360 430 C372 350 350 278 310 250 C286 320 120 324 92 250Z" fill="url(#hoodie)"/>
+    <rect x="176" y="248" width="48" height="36" rx="10" fill="#E8B896"/>
+    <ellipse cx="200" cy="168" rx="78" ry="86" fill="#E8B896"/>
+    <ellipse cx="238" cy="188" rx="22" ry="40" fill="#E0A888" opacity="0.28"/>
+    <ellipse cx="274" cy="176" rx="13" ry="20" fill="#E8B896"/>
+    <ellipse cx="274" cy="178" rx="6" ry="10" fill="#D49A78"/>
+    <path d="M122 150 C108 78 150 40 200 38 C262 36 310 78 298 158 C306 200 286 228 268 222 C274 160 248 70 200 72 C156 74 128 112 130 158Z" fill="#1C1428"/>
+    <path d="M128 148 C122 188 128 228 142 248 C136 210 132 170 140 148Z" fill="#1C1428"/>
+    <path d="M266 214 C274 228 274 248 270 258 C266 238 260 222 256 214Z" fill="#1C1428"/>
+    <path d="M134 148 C148 78 198 64 214 88 C204 122 170 148 134 148Z" fill="#1C1428"/>
+    <path d="M200 70 C232 60 270 86 278 140 C258 128 236 132 214 108 C206 92 202 78 200 70Z" fill="#1C1428"/>
+    <path d="M172 78 C196 62 228 76 236 112 L214 128 C196 100 180 92 172 78Z" fill="#1C1428"/>
+    <path d="M156 88 C170 70 186 96 178 136 C166 122 158 104 156 88Z" fill="#FF4D8A"/>
+    <ellipse cx="158" cy="204" rx="14" ry="7" fill="#FF8AA8" opacity="0.45"/>
+    <ellipse cx="246" cy="202" rx="16" ry="8" fill="#FF8AA8" opacity="0.45"/>
+    <ellipse cx="166" cy="174" rx="18" ry="14" fill="#FFF6E8"/>
+    <ellipse cx="228" cy="172" rx="20" ry="15" fill="#FFF6E8"/>
+    <ellipse cx="168" cy="176" rx="9" ry="11" fill="#3A2460"/>
+    <ellipse cx="230" cy="174" rx="10" ry="12" fill="#3A2460"/>
+    <ellipse cx="168" cy="176" rx="4.5" ry="5.5" fill="#1A1228"/>
+    <ellipse cx="230" cy="174" rx="5" ry="6" fill="#1A1228"/>
+    <circle cx="171" cy="171" r="2.4" fill="#FFF6E8"/>
+    <circle cx="234" cy="169" r="2.8" fill="#FFF6E8"/>
+    <circle cx="165" cy="180" r="1.2" fill="#6EF0E8"/>
+    <circle cx="226" cy="178" r="1.3" fill="#6EF0E8"/>
+    <path d="M148 166 C160 154 180 154 186 168" stroke="#1C1428" stroke-width="3.4" stroke-linecap="round"/>
+    <path d="M208 164 C222 150 252 150 260 166" stroke="#1C1428" stroke-width="3.6" stroke-linecap="round"/>
+    <path d="M150 158 C162 148 180 146 188 156" stroke="#1C1428" stroke-width="3.2" stroke-linecap="round"/>
+    <path d="M210 156 C226 144 250 144 262 156" stroke="#1C1428" stroke-width="3.4" stroke-linecap="round"/>
+    <path d="M198 180 L194 198 C196 202 202 202 204 198" stroke="#C48A72" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M186 214 C196 222 214 222 224 212" stroke="#C45A6A" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+    <path d="M148 268 C174 254 230 254 256 268 C246 300 160 300 148 268Z" fill="#323A6C"/>
+    <path d="M186 264 C198 286 216 286 228 264" stroke="#1A1F40" stroke-width="3" fill="none"/>
+    <g transform="translate(186, 328)" stroke="#6EF0E8" stroke-width="2.4" fill="none" stroke-linecap="round">
+      <path d="M0 10 L16 0 L32 10"/>
+      <path d="M4 20 L16 12 L28 20"/>
+    </g>
+  </g>
+
+  <!-- dialogue window -->
+  <rect x="40" y="400" width="700" height="112" rx="16" fill="#FFF4E6"/>
+  <rect x="40" y="400" width="700" height="112" rx="16" stroke="#1A1228" stroke-width="3"/>
+  <rect x="48" y="408" width="684" height="96" rx="10" stroke="#FF4D8A" stroke-width="1.2" opacity="0.7"/>
+  <rect x="56" y="386" width="132" height="28" rx="8" fill="#FF4D8A"/>
+  <text x="122" y="406" text-anchor="middle" fill="#FFF6E8" font-family="ui-sans-serif, system-ui, Inter, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.4">PRASAD</text>
+  <text x="68" y="450" fill="#1A1228" font-family="ui-sans-serif, system-ui, Inter, Arial, sans-serif" font-size="18" font-weight="600">building software</text>
+  <text x="68" y="478" fill="#5A4A62" font-family="ui-sans-serif, system-ui, Inter, Arial, sans-serif" font-size="18">while going deeper into the systems beneath it.</text>
+  <path class="caret" d="M692 478 L708 488 L692 498Z" fill="#FF4D8A"/>
+</svg>
