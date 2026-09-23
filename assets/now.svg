@@ -1,0 +1,26 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+ <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" stroke="#D9D6CF" opacity=".32"/></pattern>
+ <style>
+ .blink{animation:blink 1.8s steps(2,end) infinite}.flow{animation:flow 3s ease-in-out infinite}.rotate{transform-origin:1035px 150px;animation:rotate 8s linear infinite}
+ @keyframes blink{50%{opacity:.18}} @keyframes flow{0%,100%{transform:translateX(0);opacity:.35}50%{transform:translateX(9px);opacity:1}} @keyframes rotate{to{transform:rotate(360deg)}}
+ </style>
+</defs>
+<rect width="1200" height="300" rx="24" fill="#F4F1EA"/>
+<rect x="24" y="24" width="1152" height="252" rx="16" fill="url(#grid)" stroke="#171717" stroke-width="2"/>
+<text x="58" y="67" fill="#171717" font-family="Inter,Arial" font-size="13" font-weight="700" letter-spacing="2.4">CURRENTLY / 2026.09</text>
+<circle class="blink" cx="1140" cy="62" r="5" fill="#FF5C35"/>
+<line x1="58" y1="88" x2="1142" y2="88" stroke="#171717" opacity=".5"/>
+
+<g font-family="JetBrains Mono" font-size="13">
+ <text x="58" y="128" fill="#5A5751">01</text><text x="100" y="128" fill="#171717">distributed systems</text><text x="420" y="128" fill="#9A958C">deepening</text>
+ <text x="58" y="166" fill="#5A5751">02</text><text x="100" y="166" fill="#171717">Go / systems programming</text><text x="420" y="166" fill="#9A958C">building</text>
+ <text x="58" y="204" fill="#5A5751">03</text><text x="100" y="204" fill="#171717">AI infrastructure</text><text x="420" y="204" fill="#9A958C">exploring</text>
+ <text x="58" y="242" fill="#5A5751">04</text><text x="100" y="242" fill="#171717">open source</text><text x="420" y="242" fill="#9A958C">contributing</text>
+</g>
+
+<g class="flow"><path d="M700 126H1068" stroke="#171717"/><circle cx="760" cy="126" r="4" fill="#FF5C35"/><circle cx="880" cy="126" r="4" fill="#171717" opacity=".25"/><circle cx="1000" cy="126" r="4" fill="#171717" opacity=".25"/></g>
+<g class="flow"><path d="M700 164H1068" stroke="#171717"/><circle cx="820" cy="164" r="4" fill="#FF5C35"/><circle cx="940" cy="164" r="4" fill="#171717" opacity=".25"/><circle cx="1060" cy="164" r="4" fill="#171717" opacity=".25"/></g>
+<g class="flow"><path d="M700 202H1068" stroke="#171717"/><circle cx="900" cy="202" r="4" fill="#FF5C35"/><circle cx="780" cy="202" r="4" fill="#171717" opacity=".25"/><circle cx="1020" cy="202" r="4" fill="#171717" opacity=".25"/></g>
+<g class="rotate"><circle cx="1035" cy="150" r="27" stroke="#171717" opacity=".2" stroke-dasharray="2 8"/><path d="M1035 118V126" stroke="#FF5C35" stroke-width="2"/></g>
+</svg>
