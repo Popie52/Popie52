@@ -37,25 +37,29 @@
       border-radius: 6px;
       padding: 24px 32px 32px;
     }
-    .readme img { display: block; width: 100%; height: auto; }
-    .readme p { text-align: center; color: var(--ink); font-size: 16px; line-height: 1.5; margin: 12px 0 16px; }
+    .readme img, .readme object { display: block; width: 100%; height: auto; }
+    .readme object.svg-spread { aspect-ratio: 1200 / 620; border: 0; }
+    .readme object.svg-lockon { aspect-ratio: 1200 / 820; border: 0; }
+    .readme .lede { text-align: center; color: var(--ink); font-size: 16px; line-height: 1.5; margin: 12px 0 16px; }
+    .readme .foot { text-align: center; margin: 20px 0 0; }
     .readme a { color: var(--link); text-decoration: none; }
     .readme a:hover { text-decoration: underline; }
     .readme .fig { margin: 0 0 8px; }
-    .table-wrap { overflow-x: auto; margin: 4px 0 12px; }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 0;
-      font-size: 14px;
-    }
-    th, td {
-      border: 1px solid var(--rule);
-      padding: 8px 12px;
+    .readme p.label {
+      font-weight: 700;
+      font-size: 16px;
+      margin: 16px 0 8px;
       text-align: left;
     }
-    th { background: #f6f8fa; font-weight: 600; }
-    td:first-child, th:first-child { text-align: center; }
+    .readme ol, .readme ul {
+      margin: 0 0 16px;
+      padding-left: 1.4em;
+      text-align: left;
+      font-size: 15px;
+      line-height: 1.55;
+      color: var(--ink);
+    }
+    .readme li { margin: 4px 0; }
     .caption {
       font-family: var(--mono);
       font-size: 11px;
@@ -66,8 +70,7 @@
     }
     @media (max-width: 720px) {
       .wrap { margin: 0; border: 0; border-radius: 0; padding: 16px 12px 28px; }
-      table { font-size: 12px; }
-      th, td { padding: 8px 6px; }
+      .readme ol, .readme ul { font-size: 14px; }
     }
   </style>
 </head>
@@ -78,73 +81,40 @@
     <span>README.md / local preview (not GitHub)</span>
   </header>
   <main class="wrap">
-    <p class="caption">Profile README / visual novel file 01</p>
+    <p class="caption">Profile README / manga spread + lock-on (SVG SMIL motion)</p>
     <article class="readme">
-      <div class="fig" align="center">
-        <img src="./assets/banner.svg" alt="Prasad Jadhav - visual novel character file. Software, systems, AI. Systems first." width="100%" />
+      <div class="fig">
+        <object class="svg-spread" type="image/svg+xml" data="./assets/spread.svg" aria-label="Cast file manga spread: moon-cast seal and tomoe lock-on identity for Popie52.">
+          <img src="./assets/spread.svg" alt="Cast file manga spread: moon-cast seal and tomoe lock-on identity for Popie52." width="100%" />
+        </object>
       </div>
-      <p>
+      <p class="lede">
         systems first, applications second
-        &nbsp;/&nbsp;
+        &nbsp;&middot;&nbsp;
         <a href="https://github.com/Popie52">github.com/Popie52</a>
       </p>
-      <div class="fig" align="center">
-        <img src="./assets/routes.svg" alt="Story routes: PulseNet, DocuMind, job-queue-go, Sentinel." width="100%" />
+      <div class="fig">
+        <object class="svg-lockon" type="image/svg+xml" data="./assets/lockon.svg" aria-label="Lock-on radar: PulseNet, DocuMind, job-queue-go, Sentinel.">
+          <img src="./assets/lockon.svg" alt="Lock-on radar: PulseNet, DocuMind, job-queue-go, Sentinel." width="100%" />
+        </object>
       </div>
-      <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>Ch</th>
-            <th>Route</th>
-            <th>What it is</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>01</strong></td>
-            <td><a href="https://github.com/Popie52/PulseNet">PulseNet</a></td>
-            <td>Realtime messaging fabric (auth + message services)</td>
-          </tr>
-          <tr>
-            <td><strong>02</strong></td>
-            <td><a href="https://github.com/Popie52/DocuMind">DocuMind</a></td>
-            <td>Telegram RAG assistant: parse, embed, cite</td>
-          </tr>
-          <tr>
-            <td><strong>03</strong></td>
-            <td><a href="https://github.com/Popie52/job-queue-go">job-queue-go</a></td>
-            <td>Crash-safe priority queue; Postgres is source of truth</td>
-          </tr>
-          <tr>
-            <td><strong>04</strong></td>
-            <td><a href="https://github.com/Popie52/sentinel">Sentinel</a></td>
-            <td>TCP scanner built from POSIX sockets upward</td>
-          </tr>
-          <tr>
-            <td>S1</td>
-            <td><a href="https://github.com/Popie52/genie-cli">genie-cli</a></td>
-            <td>Local Gemini CLI that reads and runs project files</td>
-          </tr>
-          <tr>
-            <td>S2</td>
-            <td><a href="https://github.com/Popie52/ai-agent-pipeline">ai-agent-pipeline</a></td>
-            <td>Five-agent Gemini pipeline with a trace UI</td>
-          </tr>
-        </tbody>
-      </table>
-      </div>
-      <div class="fig" align="center">
-        <img src="./assets/status.svg" alt="Status window: deepening distributed systems, building Go, exploring AI, contributing open source." width="100%" />
-      </div>
-      <div class="fig" align="center">
-        <img src="./assets/epilogue.svg" alt="Epilogue: Understand the system. Then decide where the abstraction belongs." width="100%" />
-      </div>
-      <p>
+      <p class="label">Lock-on</p>
+      <ol>
+        <li><strong>01</strong> <a href="https://github.com/Popie52/PulseNet">PulseNet</a> — Realtime messaging fabric (auth + message services)</li>
+        <li><strong>02</strong> <a href="https://github.com/Popie52/DocuMind">DocuMind</a> — Telegram RAG assistant: parse, embed, cite</li>
+        <li><strong>03</strong> <a href="https://github.com/Popie52/job-queue-go">job-queue-go</a> — Crash-safe priority queue; Postgres is source of truth</li>
+        <li><strong>04</strong> <a href="https://github.com/Popie52/sentinel">Sentinel</a> — TCP scanner built from POSIX sockets upward</li>
+      </ol>
+      <p class="label">Side notes</p>
+      <ul>
+        <li><a href="https://github.com/Popie52/genie-cli">genie-cli</a> — Local Gemini CLI that reads and runs project files</li>
+        <li><a href="https://github.com/Popie52/ai-agent-pipeline">ai-agent-pipeline</a> — Five-agent Gemini pipeline with a trace UI</li>
+      </ul>
+      <p class="lede foot">
         <a href="https://github.com/Popie52">GitHub</a>
-        /
+        &middot;
         <a href="https://github.com/Popie52?tab=repositories">Repositories</a>
-        /
+        &middot;
         <a href="https://github.com/Popie52/Popie52">This profile</a>
       </p>
     </article>

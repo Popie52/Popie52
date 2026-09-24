@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/banner.svg" alt="Prasad Jadhav visual novel character file. Software, systems, AI. Systems first." width="100%" />
+  <img src="./assets/spread.svg" alt="Cast file manga spread: moon-cast seal and tomoe lock-on identity for Popie52. Software, systems, AI. Systems first." width="100%" />
 </div>
 
 <p align="center">
@@ -9,25 +9,20 @@
 </p>
 
 <div align="center">
-  <img src="./assets/routes.svg" alt="Story routes: PulseNet, DocuMind, job-queue-go, Sentinel. Side chapters in the log below." width="100%" />
+  <img src="./assets/lockon.svg" alt="Lock-on radar: PulseNet, DocuMind, job-queue-go, Sentinel. Side notes genie-cli and ai-agent-pipeline. Links in the dossier below." width="100%" />
 </div>
 
-| Ch | Route | What it is |
-|:--:|:------|:-----------|
-| **01** | [PulseNet](https://github.com/Popie52/PulseNet) | Realtime messaging fabric (auth + message services) |
-| **02** | [DocuMind](https://github.com/Popie52/DocuMind) | Telegram RAG assistant: parse, embed, cite |
-| **03** | [job-queue-go](https://github.com/Popie52/job-queue-go) | Crash-safe priority queue; Postgres is source of truth |
-| **04** | [Sentinel](https://github.com/Popie52/sentinel) | TCP scanner built from POSIX sockets upward |
-| S1 | [genie-cli](https://github.com/Popie52/genie-cli) | Local Gemini CLI that reads and runs project files |
-| S2 | [ai-agent-pipeline](https://github.com/Popie52/ai-agent-pipeline) | Five-agent Gemini pipeline with a trace UI |
+**Lock-on**
 
-<div align="center">
-  <img src="./assets/status.svg" alt="Status window: deepening distributed systems, building Go, exploring AI infrastructure, contributing open source." width="100%" />
-</div>
+1. **01** [PulseNet](https://github.com/Popie52/PulseNet) — Realtime messaging fabric (auth + message services)
+2. **02** [DocuMind](https://github.com/Popie52/DocuMind) — Telegram RAG assistant: parse, embed, cite
+3. **03** [job-queue-go](https://github.com/Popie52/job-queue-go) — Crash-safe priority queue; Postgres is source of truth
+4. **04** [Sentinel](https://github.com/Popie52/sentinel) — TCP scanner built from POSIX sockets upward
 
-<div align="center">
-  <img src="./assets/epilogue.svg" alt="Epilogue: Understand the system. Then decide where the abstraction belongs." width="100%" />
-</div>
+**Side notes**
+
+- [genie-cli](https://github.com/Popie52/genie-cli) — Local Gemini CLI that reads and runs project files
+- [ai-agent-pipeline](https://github.com/Popie52/ai-agent-pipeline) — Five-agent Gemini pipeline with a trace UI
 
 <p align="center">
   <a href="https://github.com/Popie52">GitHub</a>

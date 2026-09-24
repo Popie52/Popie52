@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="620" viewBox="0 0 1200 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cast file manga spread: moon-cast seal and tomoe lock-on identity for Popie52. Systems first.">
+  <defs>
+    <radialGradient id="void" cx="40%" cy="20%" r="90%">
+      <stop offset="0" stop-color="#2A0A12"/>
+      <stop offset="1" stop-color="#07060A"/>
+    </radialGradient>
+    <radialGradient id="bloodMoon" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#FF6A5A"/>
+      <stop offset="0.42" stop-color="#C41E3A"/>
+      <stop offset="1" stop-color="#6A0A18"/>
+    </radialGradient>
+    <radialGradient id="irisGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#FF4A4A"/>
+      <stop offset="1" stop-color="#7A101C"/>
+    </radialGradient>
+    <pattern id="tone" width="6" height="6" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="0.7" fill="#C41E3A" opacity="0.22"/>
+    </pattern>
+    <clipPath id="leftPanel"><rect x="18" y="18" width="424" height="584" rx="2"/></clipPath>
+    <clipPath id="rightPanel"><rect x="456" y="18" width="726" height="584" rx="2"/></clipPath>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      @media (prefers-reduced-motion: reduce) {
+        .pulse, .glowPulse { animation: none !important; }
+      }
+      .pulse { animation: pulse 2.8s ease-in-out infinite; }
+      .glowPulse { animation: glowPulse 4.2s ease-in-out infinite; }
+      @keyframes pulse { 0%,100% { opacity: .35 } 50% { opacity: 1 } }
+      @keyframes glowPulse { 0%,100% { opacity: .85 } 50% { opacity: 1 } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="620" fill="#07060A"/>
+  <rect x="6" y="6" width="1188" height="608" rx="5" stroke="#C41E3A" stroke-width="2"/>
+  <rect x="12" y="12" width="1176" height="596" rx="3" stroke="#D4AF37" stroke-width="0.7" opacity="0.55" stroke-dasharray="10 14">
+    <animate attributeName="stroke-dashoffset" from="0" to="48" dur="9s" repeatCount="indefinite"/>
+  </rect>
+
+  <g clip-path="url(#leftPanel)">
+    <rect x="18" y="18" width="424" height="584" fill="url(#void)"/>
+    <rect x="18" y="18" width="424" height="584" fill="url(#tone)"/>
+
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" fill="#D4AF37">
+      <text x="36" y="48" font-size="11" letter-spacing="3.2">CAST FILE</text>
+      <text x="36" y="66" font-size="11" letter-spacing="3.2">01  /  IND</text>
+    </g>
+    <text x="400" y="56" text-anchor="end" fill="#C41E3A" font-family="serif, 'Noto Serif JP', Times" font-size="22">識</text>
+
+    <!-- blood moon + slow halo spin + shade drift -->
+    <circle cx="230" cy="168" r="108" fill="#C41E3A" opacity="0.16">
+      <animate attributeName="opacity" values="0.12;0.22;0.12" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="230" cy="168" r="72" fill="url(#bloodMoon)"/>
+    <circle cx="248" cy="152" r="72" fill="#07060A" opacity="0.18">
+      <animate attributeName="cx" values="248;256;248" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="152;148;152" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <text x="230" y="182" text-anchor="middle" fill="#F4EDE0" opacity="0.28" font-family="serif, 'Noto Serif JP', Times" font-size="36">月</text>
+    <g transform="translate(230, 168)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="28s" repeatCount="indefinite"/>
+        <circle r="88" fill="none" stroke="#C41E3A" stroke-width="1" stroke-dasharray="4 10" opacity="0.5"/>
+      </g>
+    </g>
+
+    <g stroke="#C41E3A" stroke-width="0.7" opacity="0.18">
+      <path d="M40 40 L32 160M90 28 L80 150M150 36 L140 140M320 30 L312 120M380 48 L372 140">
+        <animate attributeName="opacity" values="0.12;0.28;0.12" dur="5.5s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <g fill="#07060A">
+      <animateTransform attributeName="transform" type="translate" values="0 0; 8 -6; 0 0" dur="8s" repeatCount="indefinite"/>
+      <path d="M338 92 C356 82 378 84 394 96 C378 96 368 106 362 116 C354 104 346 96 338 92Z"/>
+      <path d="M392 94 L410 86 L402 98Z"/>
+    </g>
+    <g fill="#0A080C" opacity="0.8">
+      <animateTransform attributeName="transform" type="translate" values="0 0; -6 -5; 0 0" dur="9.5s" begin="-2s" repeatCount="indefinite"/>
+      <path d="M52 210 C70 200 92 202 108 214 C92 214 82 224 76 234 C68 222 60 214 52 210Z"/>
+      <path d="M106 212 L122 204 L114 216Z"/>
+    </g>
+
+    <!-- hanging ofuda: slow sway from the string -->
+    <line x1="118" y1="78" x2="118" y2="248" stroke="#D4AF37" stroke-width="0.8" opacity="0.55"/>
+    <line x1="342" y1="78" x2="342" y2="268" stroke="#D4AF37" stroke-width="0.8" opacity="0.55"/>
+    <g transform="translate(96, 248)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="0 22 0; 1.6 22 0; 0 22 0; -1.6 22 0; 0 22 0" keyTimes="0;0.25;0.5;0.75;1" dur="6.4s" repeatCount="indefinite" calcMode="spline" keySplines="0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1"/>
+        <rect width="44" height="118" fill="#F4EDE0"/>
+        <rect x="4" y="4" width="36" height="110" fill="none" stroke="#C41E3A" stroke-width="0.9"/>
+        <text x="22" y="48" text-anchor="middle" fill="#C41E3A" font-family="serif, 'Noto Serif JP', Times" font-size="26">層</text>
+        <text x="22" y="88" text-anchor="middle" fill="#8A3040" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9">LAYER</text>
+      </g>
+    </g>
+    <g transform="translate(320, 268)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" values="0 22 0; -1.4 22 0; 0 22 0; 1.4 22 0; 0 22 0" keyTimes="0;0.25;0.5;0.75;1" dur="7.2s" begin="-1.2s" repeatCount="indefinite" calcMode="spline" keySplines="0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1"/>
+        <rect width="44" height="118" fill="#F4EDE0"/>
+        <rect x="4" y="4" width="36" height="110" fill="none" stroke="#C41E3A" stroke-width="0.9"/>
+        <text x="22" y="48" text-anchor="middle" fill="#C41E3A" font-family="serif, 'Noto Serif JP', Times" font-size="26">眼</text>
+        <text x="22" y="88" text-anchor="middle" fill="#8A3040" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9">EYE</text>
+      </g>
+    </g>
+
+    <!-- magatama seal -->
+    <g transform="translate(230, 392)">
+      <circle r="118" fill="none" stroke="#D4AF37" stroke-width="0.7" opacity="0.45"/>
+      <circle class="glowPulse" r="102" fill="#C41E3A" filter="url(#glow)" opacity="0.95"/>
+      <circle r="92" fill="#E3242B"/>
+      <circle r="28" fill="#07060A"/>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="22s" repeatCount="indefinite"/>
+        <g transform="scale(3.8)">
+          <path d="M0 -13 C5 -13 8 -9 7 -5 C6 -1 2 -1 0 -4 C2 -7 3 -11 0 -13Z" fill="#07060A"/>
+          <path d="M12 6 C11 11 6 13 2 11 C-1 9 0 4 3 4 C7 7 11 6 12 6Z" fill="#07060A"/>
+          <path d="M-12 6 C-10 2 -5 1 0 5 C1 9 -4 12 -8 12 C-11 11 -13 9 -12 6Z" fill="#07060A"/>
+        </g>
+      </g>
+      <circle r="128" fill="none" stroke="#C41E3A" stroke-width="1.4"/>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="26s" repeatCount="indefinite"/>
+        <circle r="128" fill="none" stroke="#C41E3A" stroke-width="4" stroke-dasharray="14 10" opacity="0.35"/>
+      </g>
+    </g>
+
+    <text x="36" y="560" fill="#8A8074" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">software  /  systems  /  AI</text>
+    <text x="36" y="582" fill="#C41E3A" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="2.4">MOON-CAST  /  FILE 01</text>
+  </g>
+  <rect x="18" y="18" width="424" height="584" fill="none" stroke="#C41E3A" stroke-width="1.6"/>
+
+  <g clip-path="url(#rightPanel)">
+    <rect x="456" y="18" width="726" height="584" fill="#0A0709"/>
+    <g stroke="#C41E3A" stroke-width="1" opacity="0.14">
+      <path d="M470 40 L700 220M470 90 L680 250M470 160 L640 280M470 240 L620 300M470 320 L600 310"/>
+      <path d="M470 500 L640 340M470 560 L660 360"/>
+    </g>
+    <text x="640" y="360" text-anchor="middle" fill="#C41E3A" opacity="0.07" font-family="serif, 'Noto Serif JP', Times" font-size="220" font-weight="700">眼</text>
+
+    <g transform="translate(640, 268)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/>
+        <circle r="168" fill="none" stroke="#C41E3A" stroke-width="1.2" stroke-dasharray="5 12" opacity="0.55"/>
+      </g>
+      <circle r="148" fill="none" stroke="#D4AF37" stroke-width="0.6" opacity="0.35" stroke-dasharray="4 10">
+        <animate attributeName="stroke-dashoffset" from="0" to="28" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <ellipse class="glowPulse" rx="118" ry="96" fill="url(#irisGlow)" filter="url(#glow)"/>
+      <ellipse rx="110" ry="88" fill="#E3242B"/>
+      <ellipse rx="36" ry="36" fill="#07060A"/>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="18s" repeatCount="indefinite"/>
+        <g transform="scale(4.6)">
+          <path d="M0 -13 C5 -13 8 -9 7 -5 C6 -1 2 -1 0 -4 C2 -7 3 -11 0 -13Z" fill="#07060A"/>
+          <path d="M12 6 C11 11 6 13 2 11 C-1 9 0 4 3 4 C7 7 11 6 12 6Z" fill="#07060A"/>
+          <path d="M-12 6 C-10 2 -5 1 0 5 C1 9 -4 12 -8 12 C-11 11 -13 9 -12 6Z" fill="#07060A"/>
+        </g>
+      </g>
+      <g stroke="#F4EDE0" stroke-width="2" fill="none" opacity="0.8">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="3.2s" repeatCount="indefinite"/>
+        <path d="M-150 -70 H-118 M-150 -70 V-42"/>
+        <path d="M150 -70 H118 M150 -70 V-42"/>
+        <path d="M-150 70 H-118 M-150 70 V42"/>
+        <path d="M150 70 H118 M150 70 V42"/>
+      </g>
+    </g>
+    <circle class="pulse" cx="640" cy="268" r="5" fill="#C41E3A"/>
+
+    <g font-family="ui-sans-serif, system-ui, Inter, Arial, sans-serif">
+      <text x="790" y="86" fill="#D4AF37" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="3.4">LOCK-ON  /  IDENTITY</text>
+      <text x="1148" y="86" text-anchor="end" fill="#C41E3A" font-family="serif, 'Noto Serif JP', Times" font-size="20">眼</text>
+      <text x="790" y="168" fill="#F4EDE0" font-size="54" font-weight="800" letter-spacing="-1.6">Popie52</text>
+      <text x="792" y="204" fill="#8A8074" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">Prasad Jadhav</text>
+      <text x="792" y="250" fill="#F4EDE0" font-size="16" font-weight="600">systems first</text>
+      <text x="792" y="274" fill="#8A8074" font-size="15">applications second</text>
+    </g>
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">
+      <rect x="790" y="348" width="50" height="22" fill="#C41E3A"/>
+      <text x="815" y="363" text-anchor="middle" fill="#F4EDE0">GO</text>
+      <rect x="848" y="348" width="70" height="22" fill="none" stroke="#C41E3A"/>
+      <text x="883" y="363" text-anchor="middle" fill="#F4EDE0">PYTHON</text>
+      <rect x="926" y="348" width="92" height="22" fill="none" stroke="#D4AF37"/>
+      <text x="972" y="363" text-anchor="middle" fill="#D4AF37">TYPESCRIPT</text>
+      <rect x="1026" y="348" width="46" height="22" fill="none" stroke="#C41E3A"/>
+      <text x="1049" y="363" text-anchor="middle" fill="#C41E3A">C++</text>
+    </g>
+    <text x="790" y="420" fill="#8A8074" font-family="ui-sans-serif, system-ui, Inter, Arial, sans-serif" font-size="14">building software while going</text>
+    <text x="790" y="440" fill="#8A8074" font-family="ui-sans-serif, system-ui, Inter, Arial, sans-serif" font-size="14">deeper into the systems beneath it.</text>
+    <g stroke="#C41E3A" stroke-width="2" fill="none" stroke-linecap="square">
+      <path d="M472 40 V28 H490"/>
+      <path d="M1166 40 V28 H1148"/>
+      <path d="M472 592 V586 H490"/>
+      <path d="M1166 592 V586 H1148"/>
+    </g>
+  </g>
+  <rect x="456" y="18" width="726" height="584" fill="none" stroke="#D4AF37" stroke-width="1.2" opacity="0.7" stroke-dasharray="8 12">
+    <animate attributeName="stroke-dashoffset" from="0" to="40" dur="11s" repeatCount="indefinite"/>
+  </rect>
+</svg>

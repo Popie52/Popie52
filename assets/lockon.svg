@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="820" viewBox="0 0 1200 820" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sharingan lock-on: PulseNet, DocuMind, job-queue-go, Sentinel as radial targets. Side notes genie-cli and ai-agent-pipeline.">
+  <defs>
+    <radialGradient id="lbg" cx="48%" cy="48%" r="70%">
+      <stop offset="0" stop-color="#1C0A10"/>
+      <stop offset="1" stop-color="#07060A"/>
+    </radialGradient>
+    <filter id="lg">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      @media (prefers-reduced-motion: reduce) {
+        .pulse { animation: none !important; }
+      }
+      .pulse { animation: pulse 2.6s ease-in-out infinite; }
+      @keyframes pulse { 0%,100% { opacity: .4 } 50% { opacity: 1 } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="820" fill="url(#lbg)"/>
+  <rect x="10" y="10" width="1180" height="800" rx="5" stroke="#C41E3A" stroke-width="2"/>
+  <rect x="18" y="18" width="1164" height="784" rx="3" stroke="#D4AF37" stroke-width="0.7" opacity="0.45" stroke-dasharray="10 14">
+    <animate attributeName="stroke-dashoffset" from="0" to="48" dur="10s" repeatCount="indefinite"/>
+  </rect>
+
+  <text x="40" y="48" fill="#D4AF37" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" letter-spacing="3.4">LOCK-ON  /  CAST</text>
+  <text x="40" y="84" fill="#F4EDE0" font-family="ui-sans-serif, system-ui, Inter, Arial, sans-serif" font-size="28" font-weight="800">Four targets. One eye.</text>
+  <text x="40" y="112" fill="#8A8074" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">clickable dossier below</text>
+  <text x="868" y="48" text-anchor="end" fill="#C41E3A" font-family="serif, 'Noto Serif JP', Times" font-size="20">術</text>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">
+    <text x="40" y="148" fill="#C41E3A">N  DEEPENING</text>
+    <text x="40" y="164" fill="#8A8074">distributed systems</text>
+    <text x="40" y="188" fill="#D4AF37">E  BUILDING</text>
+    <text x="40" y="204" fill="#8A8074">Go / systems</text>
+    <text x="40" y="228" fill="#F4EDE0">S  EXPLORING</text>
+    <text x="40" y="244" fill="#8A8074">AI infrastructure</text>
+    <text x="40" y="268" fill="#8A8074">W  CONTRIBUTING</text>
+    <text x="40" y="284" fill="#8A8074">open source</text>
+  </g>
+
+  <!-- hanging ofuda: side notes -->
+  <g transform="translate(980, 28)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0 36 0; 1.2 36 0; 0 36 0; -1.2 36 0; 0 36 0" keyTimes="0;0.25;0.5;0.75;1" dur="6.8s" repeatCount="indefinite" calcMode="spline" keySplines="0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1"/>
+      <rect x="0" y="0" width="72" height="96" fill="#F4EDE0"/>
+      <rect x="4" y="4" width="64" height="88" fill="none" stroke="#C41E3A" stroke-width="0.8"/>
+      <text x="36" y="28" text-anchor="middle" fill="#C41E3A" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10">S1</text>
+      <text x="36" y="52" text-anchor="middle" fill="#1A1814" font-family="ui-sans-serif, system-ui, Inter, Arial, sans-serif" font-size="11" font-weight="700">genie</text>
+      <text x="36" y="68" text-anchor="middle" fill="#1A1814" font-family="ui-sans-serif, system-ui, Inter, Arial, sans-serif" font-size="11" font-weight="700">-cli</text>
+    </g>
+  </g>
+  <g transform="translate(1064, 44)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" values="0 36 0; -1.1 36 0; 0 36 0; 1.1 36 0; 0 36 0" keyTimes="0;0.25;0.5;0.75;1" dur="7.4s" begin="-1s" repeatCount="indefinite" calcMode="spline" keySplines="0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1; 0.37 0 0.63 1"/>
+      <rect x="0" y="0" width="72" height="110" fill="#F4EDE0"/>
+      <rect x="4" y="4" width="64" height="102" fill="none" stroke="#C41E3A" stroke-width="0.8"/>
+      <text x="36" y="28" text-anchor="middle" fill="#C41E3A" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10">S2</text>
+      <text x="36" y="54" text-anchor="middle" fill="#1A1814" font-family="ui-sans-serif, system-ui, Inter, Arial, sans-serif" font-size="10" font-weight="700">ai-agent</text>
+      <text x="36" y="70" text-anchor="middle" fill="#1A1814" font-family="ui-sans-serif, system-ui, Inter, Arial, sans-serif" font-size="10" font-weight="700">pipeline</text>
+    </g>
+  </g>
+
+  <text x="600" y="470" text-anchor="middle" fill="#C41E3A" opacity="0.08" font-family="serif, 'Noto Serif JP', Times" font-size="200" font-weight="700">識</text>
+
+  <g transform="translate(600, 430)">
+    <circle r="310" fill="none" stroke="#2A1218" stroke-width="1.2"/>
+    <circle r="230" fill="none" stroke="#2A1218" stroke-width="1"/>
+    <circle r="150" fill="none" stroke="#3A181F" stroke-width="1"/>
+    <circle r="78" fill="none" stroke="#C41E3A" stroke-width="1.4" opacity="0.7"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="28s" repeatCount="indefinite"/>
+      <circle r="310" fill="none" stroke="#C41E3A" stroke-width="0.8" stroke-dasharray="3 10" opacity="0.4"/>
+    </g>
+    <!-- radar sweep: wedge + leading edge, rotates around origin -->
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="11s" repeatCount="indefinite"/>
+      <path d="M0 0 L0 -310 A310 310 0 0 1 96 -295 Z" fill="#C41E3A" opacity="0.10"/>
+      <path d="M0 0 L0 -310" stroke="#C41E3A" stroke-width="1.4" opacity="0.45"/>
+    </g>
+    <path d="M0 -318 L0 318 M-318 0 L318 0" stroke="#2A1218" stroke-width="0.8"/>
+
+    <circle r="42" fill="#C41E3A" filter="url(#lg)"/>
+    <circle r="36" fill="#E3242B"/>
+    <circle r="12" fill="#07060A"/>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+      <path d="M0 -28 C10 -28 16 -20 14 -12 C12 -4 2 -4 0 -10 C4 -16 6 -24 0 -28Z" fill="#07060A"/>
+      <path d="M24 14 C22 24 12 28 4 22 C-2 18 0 8 6 8 C14 14 22 12 24 14Z" fill="#07060A"/>
+      <path d="M-24 14 C-20 6 -10 4 0 12 C2 20 -8 26 -16 26 C-22 24 -26 20 -24 14Z" fill="#07060A"/>
+    </g>
+
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#5A4038">
+      <text x="0" y="-320" text-anchor="middle">N</text>
+      <text x="322" y="4">E</text>
+      <text x="0" y="332" text-anchor="middle">S</text>
+      <text x="-322" y="4" text-anchor="end">W</text>
+    </g>
+
+    <g transform="translate(82, -96)">
+      <g stroke="#C41E3A" fill="none" stroke-width="2" opacity="0.95">
+        <animate attributeName="opacity" values="0.45;1;0.45" dur="2.8s" repeatCount="indefinite"/>
+        <path d="M-48 -30 H-26 M-48 -30 V-12"/>
+        <path d="M48 -30 H26 M48 -30 V-12"/>
+        <path d="M-48 30 H-26 M-48 30 V12"/>
+        <path d="M48 30 H26 M48 30 V12"/>
+      </g>
+      <circle class="pulse" r="4" fill="#C41E3A"/>
+      <circle r="8" fill="none" stroke="#C41E3A" stroke-width="1.2" opacity="0">
+        <animate attributeName="r" values="6;26" dur="2.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.55;0" dur="2.8s" repeatCount="indefinite"/>
+      </circle>
+      <text x="58" y="-18" fill="#C41E3A" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">01  LOCKED</text>
+      <text x="58" y="8" fill="#F4EDE0" font-family="ui-sans-serif, system-ui, Inter, Arial, sans-serif" font-size="26" font-weight="800">PulseNet</text>
+      <text x="58" y="30" fill="#C9C0B4" font-family="ui-sans-serif, system-ui, Inter, Arial, sans-serif" font-size="13">realtime messaging fabric</text>
+    </g>
+
+    <g transform="translate(168, 86)">
+      <g stroke="#D4AF37" fill="none" stroke-width="1.5" opacity="0.8">
+        <animate attributeName="opacity" values="0.4;0.95;0.4" dur="3.6s" begin="-0.8s" repeatCount="indefinite"/>
+        <path d="M-32 -20 H-16 M-32 -20 V-8"/>
+        <path d="M32 -20 H16 M32 -20 V-8"/>
+        <path d="M-32 20 H-16 M-32 20 V8"/>
+        <path d="M32 20 H16 M32 20 V8"/>
+      </g>
+      <circle r="3" fill="#D4AF37"/>
+      <text x="40" y="-8" fill="#D4AF37" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">02  ARCHIVE</text>
+      <text x="40" y="14" fill="#F4EDE0" font-family="ui-sans-serif, system-ui, Inter, Arial, sans-serif" font-size="20" font-weight="800">DocuMind</text>
+      <text x="40" y="34" fill="#8A8074" font-family="ui-sans-serif, system-ui, Inter, Arial, sans-serif" font-size="12">parse, embed, cite</text>
+    </g>
+
+    <g transform="translate(-70, 188)">
+      <g stroke="#8A8074" fill="none" stroke-width="1.5" opacity="0.75">
+        <animate attributeName="opacity" values="0.35;0.9;0.35" dur="4s" begin="-1.4s" repeatCount="indefinite"/>
+        <path d="M-32 -20 H-16 M-32 -20 V-8"/>
+        <path d="M32 -20 H16 M32 -20 V-8"/>
+        <path d="M-32 20 H-16 M-32 20 V8"/>
+        <path d="M32 20 H16 M32 20 V8"/>
+      </g>
+      <circle r="3" fill="#8A8074"/>
+      <text x="-44" y="-8" text-anchor="end" fill="#D4AF37" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">03  HOLD</text>
+      <text x="-44" y="14" text-anchor="end" fill="#F4EDE0" font-family="ui-sans-serif, system-ui, Inter, Arial, sans-serif" font-size="20" font-weight="800">job-queue-go</text>
+      <text x="-44" y="34" text-anchor="end" fill="#8A8074" font-family="ui-sans-serif, system-ui, Inter, Arial, sans-serif" font-size="12">crash-safe priority queue</text>
+    </g>
+
+    <g transform="translate(-200, -78)">
+      <g stroke="#8A8074" fill="none" stroke-width="1.5" opacity="0.75">
+        <animate attributeName="opacity" values="0.35;0.9;0.35" dur="3.8s" begin="-2s" repeatCount="indefinite"/>
+        <path d="M-32 -20 H-16 M-32 -20 V-8"/>
+        <path d="M32 -20 H16 M32 -20 V-8"/>
+        <path d="M-32 20 H-16 M-32 20 V8"/>
+        <path d="M32 20 H16 M32 20 V8"/>
+      </g>
+      <circle r="3" fill="#C41E3A"/>
+      <text x="-44" y="-8" text-anchor="end" fill="#C41E3A" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">04  WATCH</text>
+      <text x="-44" y="14" text-anchor="end" fill="#F4EDE0" font-family="ui-sans-serif, system-ui, Inter, Arial, sans-serif" font-size="20" font-weight="800">Sentinel</text>
+      <text x="-44" y="34" text-anchor="end" fill="#8A8074" font-family="ui-sans-serif, system-ui, Inter, Arial, sans-serif" font-size="12">POSIX TCP scanner</text>
+    </g>
+  </g>
+
+  <g transform="translate(1068, 700)">
+    <circle r="62" fill="none" stroke="#C41E3A" stroke-width="2.4" stroke-dasharray="8 10">
+      <animate attributeName="stroke-dashoffset" from="0" to="36" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="54" fill="none" stroke="#C41E3A" stroke-width="0.8"/>
+    <text x="0" y="-8" text-anchor="middle" fill="#C41E3A" font-family="serif, 'Noto Serif JP', Times" font-size="18">月</text>
+    <text x="0" y="12" text-anchor="middle" fill="#F4EDE0" font-family="ui-sans-serif, system-ui, Inter, Arial, sans-serif" font-size="10">Understand the</text>
+    <text x="0" y="26" text-anchor="middle" fill="#F4EDE0" font-family="ui-sans-serif, system-ui, Inter, Arial, sans-serif" font-size="10">system first.</text>
+  </g>
+</svg>
